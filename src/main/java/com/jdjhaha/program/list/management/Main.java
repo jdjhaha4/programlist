@@ -11,6 +11,8 @@ public class Main {
 		ApplicationContext context = new AnnotationConfigApplicationContext(ProgramManagementConfig.class);
 		
 		ProgramManager programManager = context.getBean(ProgramManager.class);
+//		ProgramManager programManager = (ProgramManager) context.getBean("programManager");
+//		ProgramManager programManager = (ProgramManager) context.getBean("programManager",ProgramManager.class);
 		
 		ProgramVO programVO = programManager.getProgram(1);
 		System.out.println(programVO);

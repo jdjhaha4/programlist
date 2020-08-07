@@ -9,7 +9,7 @@ import com.jdjhaha.program.list.management.ProgramVO;
 @Configuration
 public class ProgramManagementConfig {
 	
-	@Bean
+	@Bean(name="programManager")
 	public ProgramManager programManager() {
 		ProgramManager programManager = new ProgramManager();
 		programManager.addProgram(new ProgramVO(1, "메인 페이지 호출", "/main.do"));

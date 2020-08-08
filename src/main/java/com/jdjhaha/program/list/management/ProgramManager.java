@@ -2,11 +2,19 @@ package com.jdjhaha.program.list.management;
 
 import java.util.LinkedList;
 
+import org.springframework.stereotype.Component;
+
+@Component("programManager")
 public class ProgramManager {
 	private LinkedList<ProgramVO> programList = null;
 	
 	public ProgramManager() {
 		programList = new LinkedList<ProgramVO>();
+		this.addProgram(new ProgramVO(1, "메인 페이지 호출", "/main.do"));
+		this.addProgram(new ProgramVO(2, "회원가입 페이지 호출", "/member/regist.do"));
+		this.addProgram(new ProgramVO(3, "로그인 페이지 호출", "/member/login.do"));
+		this.addProgram(new ProgramVO(4, "로그인 실행", "/member/login.json"));
+		this.addProgram(new ProgramVO(5, "로그아웃 실행", "/member/logout.json"));
 	}
 	
 	public void addProgram(ProgramVO program) {

@@ -32,4 +32,9 @@ public class ProgramManager {
 		
 		return resultProgram;
 	}
+
+	public LinkedList<ProgramVO> getProgramList() {
+		return programList;
+	}
+	 
 }

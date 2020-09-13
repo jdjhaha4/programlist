@@ -12,11 +12,7 @@ public class Main {
 		ApplicationContext context = new AnnotationConfigApplicationContext(ProgramManagementConfig.class);
 		
 		MyLogger multiLineLogger = context.getBean("multiLineLogger", MyLogger.class);
-		MyLogger singleLineLogger = context.getBean("singleLineLogger", MyLogger.class);
-		System.out.println("=============multi line log================");
-		multiLineLogger.printAllProgram();
-		System.out.println("=============single line log==================");
-		singleLineLogger.printAllProgram();
+		System.out.println(multiLineLogger.getLogPath());
 		
 	}
 

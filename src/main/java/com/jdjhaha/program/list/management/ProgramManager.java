@@ -1,10 +1,12 @@
 package com.jdjhaha.program.list.management;
 
 import java.util.LinkedList;
-import java.util.Map;
+
+import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.jdjhaha.program.list.management.logger.MyLogger;
@@ -12,8 +14,7 @@ import com.jdjhaha.program.list.management.logger.MyLogger;
 @Component("programManager")
 public class ProgramManager {
 	
-	@Autowired
-	@Qualifier("multiLineLogger")
+	@Resource(name="multiLineLogger")
 	private MyLogger myLogger;
 	
 	private LinkedList<ProgramVO> programList = null;
@@ -46,5 +47,9 @@ public class ProgramManager {
 	public LinkedList<ProgramVO> getProgramList() {
 		return programList;
 	}
-	 
+	
+	public void printAllPrograms() {
+		myLogger.setProgramManager(this);
+		myLogger.printAllProgram();
+	}
 }

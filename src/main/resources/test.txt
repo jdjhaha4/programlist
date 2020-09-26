@@ -1,0 +1,16 @@
+Fri Sep 18 06:48:05 KST 2020::init() 함수 실행
+Fri Sep 18 06:48:08 KST 2020::init() 함수 실행
+Fri Sep 18 06:50:25 KST 2020::init() 함수 실행
+Sat Sep 19 00:02:19 KST 2020::init() 함수 실행
+Sat Sep 19 00:05:39 KST 2020::init() 함수 실행
+Sat Sep 19 00:06:18 KST 2020::init() 함수 실행
+Sat Sep 19 00:07:32 KST 2020::init() 함수 실행
+Sat Sep 19 00:07:32 KST 2020::안녕하세요~!
+Sat Sep 19 00:08:08 KST 2020::init() 함수 실행
+Sat Sep 19 00:08:08 KST 2020::안녕하세요~!
+Sat Sep 19 00:08:24 KST 2020::init() 함수 실행
+Sat Sep 19 00:08:24 KST 2020::안녕하세요~!
+Sat Sep 19 00:14:24 KST 2020::init() 함수 실행
+Sat Sep 19 00:14:24 KST 2020::안녕하세요~!
+Sat Sep 19 00:16:40 KST 2020::init() 함수 실행
+Sat Sep 19 00:16:40 KST 2020::안녕하세요~!

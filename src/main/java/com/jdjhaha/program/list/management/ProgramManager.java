@@ -21,11 +21,11 @@ public class ProgramManager {
 	
 	public ProgramManager() {
 		programList = new LinkedList<ProgramVO>();
-		this.addProgram(new ProgramVO(1, "¸ŞÀÎ ÆäÀÌÁö È£Ãâ", "/main.do"));
-		this.addProgram(new ProgramVO(2, "È¸¿ø°¡ÀÔ ÆäÀÌÁö È£Ãâ", "/member/regist.do"));
-		this.addProgram(new ProgramVO(3, "·Î±×ÀÎ ÆäÀÌÁö È£Ãâ", "/member/login.do"));
-		this.addProgram(new ProgramVO(4, "·Î±×ÀÎ ½ÇÇà", "/member/login.json"));
-		this.addProgram(new ProgramVO(5, "·Î±×¾Æ¿ô ½ÇÇà", "/member/logout.json"));
+		this.addProgram(new ProgramVO(1, "ë©”ì¸í˜ì´ì§€", "/main.do"));
+		this.addProgram(new ProgramVO(2, "íšŒì›ê°€ì…í˜ì´ì§€", "/member/regist.do"));
+		this.addProgram(new ProgramVO(3, "ë¡œê·¸ì¸í˜ì´ì§€", "/member/login.do"));
+		this.addProgram(new ProgramVO(4, "ë¡œê·¸ì¸ì‹¤í–‰", "/member/login.json"));
+		this.addProgram(new ProgramVO(5, "ë¡œê·¸ì•„ì›ƒì‹¤í–‰", "/member/logout.json"));
 	}
 	
 	public void addProgram(ProgramVO program) {
